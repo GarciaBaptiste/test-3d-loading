@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background: black;
 }
 
 p{
@@ -8,4 +9,12 @@ p{
 
 * {
   box-sizing: border-box;
+}
+
+@keyframes rotate {
+  from { transform: rotateY(0); }
+  25% { transform: rotateY(90deg); }
+  50% { transform: rotateY(180deg); }
+  75% { transform: rotateY(270deg); }
+  to { transform: rotateY(360deg); }
 }
