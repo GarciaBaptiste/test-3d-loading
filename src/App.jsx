@@ -9,7 +9,7 @@ const Scene = styled.div`
   transform-style: preserve-3d;
   transform: rotateY(0deg);
   position: relative;
-  animation: rotate 5s infinite reverse;
+  animation: rotate 7s infinite reverse;
 `;
 
 const Face = styled.div`
@@ -24,7 +24,7 @@ const FaceBackground = styled.div`
   width: 100%;
   height: 100%;
   border: solid 3px black;
-  border-radius: 35vw;
+  border-radius: calc((100vw + 100vh) / 8);
   background: white;
   display: flex;
   align-items: center;
@@ -32,14 +32,14 @@ const FaceBackground = styled.div`
 `;
 
 const LoadingText = styled.p`
-  font-size: 24px;
+  font-size: 12vw;
 `;
 
 const BasicFace = ({ rotation }) => {
   return (
     <Face rotation={rotation}>
       <FaceBackground>
-        <LoadingText><i>Loading...</i></LoadingText>
+        <LoadingText style={{fontVariationSettings : '"wdth" 999, "wght" 400'}}>LOADING...</LoadingText>
       </FaceBackground>
     </Face>
   )

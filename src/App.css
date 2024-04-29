@@ -1,6 +1,12 @@
+@font-face {
+  font-family: "Anybody";
+  src: url("../src/assets/fonts/Anybody.ttf");
+}
+
 body {
   margin: 0;
   background: black;
+  font-family: "Anybody";
 }
 
 p{
